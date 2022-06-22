@@ -6,7 +6,7 @@ import os
 import warnings
 import astropy as ap
 import pandas as pd
-inport astopy as ap
+inport astropy as ap
 def gaia_name(simbad_name):
     """ Purpose to get Gaia object ID for the star
     Argument is simbad_name which is a string: If the SIMBAD name of the star that we need to turn into a Gaia ID.
