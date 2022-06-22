@@ -4,10 +4,7 @@ import requests
 import matplotlib.pyplot as plt
 import os
 import warnings
-<<<<<<< HEAD
 import astropy as ap
-=======
->>>>>>> bd7444bd208d4a4d6fcde29ce40bc451050f479b
 import pandas as pd
 inport astopy as ap
 def gaia_name(simbad_name):
