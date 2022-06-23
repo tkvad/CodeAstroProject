@@ -8,9 +8,15 @@ import astropy as ap
 import pandas as pd
 inport astropy as ap
 def gaia_name(simbad_name):
-    """ Purpose to get Gaia object ID for the star
-    Argument is simbad_name which is a string: If the SIMBAD name of the star that we need to turn into a Gaia ID.
-    Returns String: Returns the Gaia ID of the star or an empty string if Gaia ID doesn't exist for the object.
+    """ Get Gaia object ID for the star under investigation
+
+    Returns the Gaia ID of an object when given its Simbad name.
+
+    Args:
+        simbad_name (string): String. SIMBAD name of the star that we need to turn into a Gaia ID.
+
+    Returns:
+        gaia_id (String): String. Returns the Gaia ID of the star or an empty string if Gaia ID doesn't exist for the object.
     """
     gaia_id = Simbad.query_objectids(simbad_name, cache=False)
     if gaia_id == None:
